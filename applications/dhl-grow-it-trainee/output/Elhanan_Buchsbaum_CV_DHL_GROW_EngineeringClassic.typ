@@ -10,11 +10,11 @@
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
-  page-top-margin: 0.4in,
-  page-bottom-margin: 0.4in,
+  page-top-margin: 0.35in,
+  page-bottom-margin: 0.35in,
   page-left-margin: 0.5in,
   page-right-margin: 0.5in,
-  page-show-footer: true,
+  page-show-footer: false,
   page-show-top-note: true,
   colors-body: rgb(0, 0, 0),
   colors-name: rgb(0, 79, 144),
@@ -24,7 +24,7 @@
   colors-links: rgb(0, 79, 144),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
-  typography-line-spacing: 0.6em,
+  typography-line-spacing: 0.5em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
   typography-font-family-body: "Raleway",
@@ -32,8 +32,8 @@
   typography-font-family-headline: "Raleway",
   typography-font-family-connections: "Raleway",
   typography-font-family-section-titles: "Raleway",
-  typography-font-size-body: 10pt,
-  typography-font-size-name: 30pt,
+  typography-font-size-body: 9.5pt,
+  typography-font-size-name: 20pt,
   typography-font-size-headline: 10pt,
   typography-font-size-connections: 10pt,
   typography-font-size-section-titles: 1.4em,
@@ -49,9 +49,9 @@
   links-show-external-link-icon: false,
   header-alignment: left,
   header-photo-width: 3.5cm,
-  header-space-below-name: 0.7cm,
-  header-space-below-headline: 0.7cm,
-  header-space-below-connections: 0.7cm,
+  header-space-below-name: 0.3cm,
+  header-space-below-headline: 0.3cm,
+  header-space-below-connections: 0.3cm,
   header-connections-hyperlink: true,
   header-connections-show-icons: true,
   header-connections-display-urls-instead-of-usernames: false,
@@ -59,11 +59,11 @@
   header-connections-space-between-connections: 0.5cm,
   section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
-  section-titles-space-above: 0.5cm,
-  section-titles-space-below: 0.3cm,
+  section-titles-space-above: 0.2cm,
+  section-titles-space-below: 0.12cm,
   sections-allow-page-break: true,
-  sections-space-between-text-based-entries: 0.2em,
-  sections-space-between-regular-entries: 0.9em,
+  sections-space-between-text-based-entries: 0.1cm,
+  sections-space-between-regular-entries: 0.2cm,
   entries-date-and-location-width: 4.15cm,
   entries-side-space: 0.2cm,
   entries-space-between-columns: 0.1cm,
@@ -75,8 +75,8 @@
   entries-highlights-bullet:  "•" ,
   entries-highlights-nested-bullet:  "•" ,
   entries-highlights-space-left: 0cm,
-  entries-highlights-space-above: 0.12cm,
-  entries-highlights-space-between-items: 0.12cm,
+  entries-highlights-space-above: 0.05cm,
+  entries-highlights-space-between-items: 0.05cm,
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
@@ -103,7 +103,7 @@
 
 == Summary
 
-Computational scientist (PhD) who builds software and hardware systems end to end — defining requirements and acceptance criteria up front, implementing and validating the solution, then documenting and training others to run it independently. Nine years writing production research software in Python and Rust, across data pipelines, HPC infrastructure, computer vision, and applied AI\/LLM-assisted development tooling (Claude Code, MCP-based tool integrations). Track record of modernizing legacy tooling that was then adopted team-wide, and of translating between technical implementation and non-technical stakeholders. Two first-author Current Biology papers. Native English speaker; German B1–B2.
+Computational scientist (PhD) who builds software and hardware systems end to end — defining requirements and acceptance criteria up front, implementing and validating the solution, then documenting and training others to run it independently. Nine years in Python and Rust across data pipelines, HPC infrastructure, computer vision, and AI-assisted development (Claude Code, MCP-based tool integrations). Modernised legacy tooling that was then adopted team-wide. Two first-author Current Biology papers. Native English speaker; German B1–B2.
 
 == Experience
 
@@ -132,15 +132,13 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
   ],
   main-column-second-row: [
-    - Designed and built a closed-loop measurement platform for freely flying Drosophila end to end; defined datasets, test setups, and acceptance criteria up front, then implemented multi-camera imaging, real-time 3D tracking, optogenetic control, and microcontroller triggering, synchronised at 10 ms closed-loop latency.
+    - Designed and built a closed-loop measurement platform for freely flying Drosophila end to end; defined datasets, test setups, and acceptance criteria up front, then implemented multi-camera imaging, real-time 3D tracking, optogenetic control, and microcontroller triggering at 10 ms closed-loop latency.
 
-    - Evaluated Python against the platform's timing requirements, found it insufficient, and rewrote the acquisition\/triggering layer in Rust; kept Python for surrounding tooling and analysis.
+    - Evaluated Python against the platform's timing requirements, found it insufficient, and rewrote the acquisition\/triggering layer in Rust; validated the multi-camera 3D calibration stack quantitatively (0.5 px reprojection error, 6 cameras at 100 fps).
 
-    - Built and validated the multi-camera 3D calibration stack quantitatively (0.5 px reprojection error across 6 cameras at 100 fps).
+    - Built reproducible Python pipelines processing hundreds of recordings (\~10 GB each) in HDF5\/Parquet, run in parallel locally and as Slurm batch jobs; open-sourced the platform as OptoFly (github.com\/mpinb\/optofly, GPL-3.0, 485 commits, live docs site).
 
-    - Developed reproducible Python pipelines processing hundreds of recordings (\~10 GB each, thousands of animals) in HDF5\/Parquet, run in parallel locally and as Slurm batch jobs.
-
-    - Documented the system and shipped self-service analysis tools so lab members without programming backgrounds could run standardised experiments and analyses unsupervised; trained and supported them. Supervised one MSc student through their thesis project.
+    - Documented the system and shipped self-service tools so lab members without programming backgrounds could run analyses independently; trained and supported them; supervised one MSc student.
 
     - #strong[Result:] first-author paper in Current Biology (2025) on a descending neuron driving visually evoked flight saccades.
 
@@ -157,58 +155,24 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
   ],
   main-column-second-row: [
-    - Built MATLAB signal-processing pipelines for in vivo electrophysiology and statistical analysis over large multi-dimensional datasets (\~2,100 sorted units, 23 animals).
+    - Built MATLAB signal-processing pipelines for in vivo electrophysiology and statistics over large multi-dimensional datasets (\~2,100 sorted units, 23 animals); modernised the lab's legacy analysis codebase, documented procedures, and trained incoming researchers — adopted lab-wide.
 
-    - Modernised and extended the lab's legacy analysis codebase; documented procedures and trained incoming researchers — the tooling was adopted lab-wide.
-
-    - Co-first-author paper in Current Biology (2021) on head-direction coding in the avian hippocampal formation.
-
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[Teaching Assistant — Machine Learning in Medical Sciences], Technion – Israel Institute of Technology, Faculty of Medicine -- Haifa, Israel
-
-  ],
-  [
-    2017 – 2018
-
-  ],
-  main-column-second-row: [
-    - Taught Python, statistics, and machine-learning fundamentals to medical students with no programming background.
-
-  ],
-)
-
-== Selected Projects
-
-#regular-entry(
-  [
-    #strong[#link("https://github.com/mpinb/optofly")[OptoFly] — closed-loop tracking and optogenetic stimulation system for freely flying Drosophila] -- #strong[public, GPL-3.0]
-
-  ],
-  [
-    2020 – 2026
-
-  ],
-  main-column-second-row: [
-    - Integrates multi-camera 3D tracking with triggered recording, optogenetic stimulation, dynamic autofocus, and configurable visual stimuli; Rust acquisition layer with Python bindings. 485 commits; documented via a live docs site.
+    - Co-first-author paper in Current Biology (2021) on head-direction coding in the avian hippocampal formation. Also taught Python, statistics, and ML fundamentals to medical students with no programming background (TA, Machine Learning in Medical Sciences).
 
   ],
 )
 
 == Skills
 
-#strong[AI & automation:] LLM-assisted software development (Claude Code), MCP-based tool\/skill integration, agentic coding harnesses (opencode, pi), OpenAI-compatible APIs, OpenRouter
+#strong[AI & automation:] Claude Code, MCP-based tool\/skill integration, agentic coding harnesses (opencode, pi), OpenAI-compatible APIs, OpenRouter
 
-#strong[Software development:] Python (primary), Rust, MATLAB, R, Bash, SQL, Git\/GitHub
+#strong[Software, data & infrastructure:] Python (primary), Rust, MATLAB, R, Bash, SQL, Git\/GitHub, NumPy\/pandas\/scikit-learn, HDF5\/Parquet, Linux, Docker, HPC (Slurm)
 
-#strong[Data & infrastructure:] NumPy\/pandas\/scikit-learn, statistical modelling, HDF5\/Parquet, Linux, Docker, HPC (Slurm), reproducible parallel\/batch pipelines
+#strong[Computer vision & hardware:] OpenCV, FFmpeg, camera calibration, object detection (YOLO), markerless pose tracking (DeepLabCut, SLEAP), closed-loop real-time instrumentation
 
-#strong[Computer vision:] OpenCV, FFmpeg, camera calibration, object detection (YOLO), markerless pose tracking (DeepLabCut, SLEAP)
+#strong[Working methods:] Translating requirements into acceptance criteria; iterative, incrementally validated development; technical documentation for non-technical audiences; training and onboarding
 
-#strong[Working methods:] Translating requirements into technical solutions and acceptance criteria; iterative, incrementally validated development; technical documentation for non-technical stakeholders; training and onboarding
+#strong[Languages:] English (native), Hebrew (native), German (B1–B2, actively studying)
 
 #strong[Productivity tools:] Microsoft Office (Word, PowerPoint)
 
@@ -216,7 +180,7 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
 #education-entry(
   [
-    #strong[University of Bonn \/ MPI for Neurobiology of Behavior (caesar)], PhD in Neuroscience -- Bonn, Germany
+    #strong[University of Bonn \/ MPI for Neurobiology of Behavior (caesar)], PhD in Neuroscience (magna cum laude) -- Bonn, Germany
 
   ],
   [
@@ -224,18 +188,12 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
   ],
   main-column-second-row: [
-    - magna cum laude
-
-    - Thesis: #emph[Neural Control of Flight Maneuvers in Freely Flying Drosophila melanogaster] (advisor: Dr. Bettina Schnell)
-
-    - IMPRS for Brain and Behavior
-
   ],
 )
 
 #education-entry(
   [
-    #strong[Technion – Israel Institute of Technology], MSc in Neuroscience -- Haifa, Israel
+    #strong[Technion – Israel Institute of Technology], MSc in Neuroscience (summa cum laude) -- Haifa, Israel
 
   ],
   [
@@ -243,10 +201,6 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
   ],
   main-column-second-row: [
-    - summa cum laude
-
-    - Thesis: #emph[Space Coding in the Japanese Quail Hippocampal Formation] (advisor: Prof. Yoram Gutfreund)
-
   ],
 )
 
@@ -262,49 +216,3 @@ Computational scientist (PhD) who builds software and hardware systems end to en
   main-column-second-row: [
   ],
 )
-
-== Publications
-
-#regular-entry(
-  [
-    #strong[Activity of a descending neuron associated with visually elicited flight saccades in Drosophila]
-
-  ],
-  [
-    2025
-
-  ],
-  main-column-second-row: [
-    #strong[Elhanan Buchsbaum], Bettina Schnell
-
-    #link("https://doi.org/10.1016/j.cub.2024.12.001")[10.1016\/j.cub.2024.12.001] (Current Biology 35(3), 665–671)
-
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[Directional tuning in the hippocampal formation of birds]
-
-  ],
-  [
-    2021
-
-  ],
-  main-column-second-row: [
-    #summary[Co-first author (with K. Krivoruchko). Published under the author's former surname, Ben-Yishay.]
-
-    #strong[Elhanan Ben-Yishay], K. Krivoruchko, S. Ron, N. Ulanovsky, D. Derdikman, Y. Gutfreund
-
-    #link("https://doi.org/10.1016/j.cub.2021.04.029")[10.1016\/j.cub.2021.04.029] (Current Biology 31(12), 2592–2602)
-
-  ],
-)
-
-== Languages
-
-#strong[English:] Native
-
-#strong[Hebrew:] Native
-
-#strong[German:] B1–B2, actively studying
