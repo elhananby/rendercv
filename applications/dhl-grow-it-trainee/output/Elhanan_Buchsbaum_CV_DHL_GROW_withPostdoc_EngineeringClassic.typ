@@ -32,8 +32,8 @@
   typography-font-family-headline: "Raleway",
   typography-font-family-connections: "Raleway",
   typography-font-family-section-titles: "Raleway",
-  typography-font-size-body: 10pt,
-  typography-font-size-name: 22pt,
+  typography-font-size-body: 9.5pt,
+  typography-font-size-name: 20pt,
   typography-font-size-headline: 10pt,
   typography-font-size-connections: 10pt,
   typography-font-size-section-titles: 1.4em,
@@ -62,7 +62,7 @@
   section-titles-space-above: 0.25cm,
   section-titles-space-below: 0.15cm,
   sections-allow-page-break: true,
-  sections-space-between-text-based-entries: 0.12cm,
+  sections-space-between-text-based-entries: 0.08cm,
   sections-space-between-regular-entries: 0.6em,
   entries-date-and-location-width: 4.15cm,
   entries-side-space: 0.2cm,
@@ -141,6 +141,23 @@ Computational scientist (PhD) who builds software and hardware systems end to en
   ],
   main-column-second-row: [
     - Built MATLAB signal-processing and statistics pipelines for large datasets; modernised and documented the lab's legacy analysis codebase, which was then adopted lab-wide, and trained incoming researchers on it. Also taught Python, statistics and ML to non-programmer medical students (teaching assistant). Co-first-author paper in Current Biology (2021).
+
+  ],
+)
+
+== Selected Projects
+
+#regular-entry(
+  [
+    #strong[Automated visual inspection pipeline — MPI for Neurobiology of Behavior] -- #strong[Bonn, Germany]
+
+  ],
+  [
+    2025 – 2026
+
+  ],
+  main-column-second-row: [
+    - Built imaging hardware and an OpenCV\/FFmpeg + YOLO pipeline to replace a manual visual scoring process; hardware, acquisition and detection ran end to end within a three-month contract, classification validated at notebook stage.
 
   ],
 )

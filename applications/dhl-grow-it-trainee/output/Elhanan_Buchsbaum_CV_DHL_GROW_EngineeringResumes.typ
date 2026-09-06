@@ -12,8 +12,8 @@
   page-size: "us-letter",
   page-top-margin: 0.4in,
   page-bottom-margin: 0.4in,
-  page-left-margin: 0.6in,
-  page-right-margin: 0.6in,
+  page-left-margin: 0.5in,
+  page-right-margin: 0.5in,
   page-show-footer: false,
   page-show-top-note: true,
   colors-body: rgb(0, 0, 0),
@@ -59,11 +59,11 @@
   header-connections-space-between-connections: 0.5cm,
   section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
-  section-titles-space-above: 0.5cm,
-  section-titles-space-below: 0.3cm,
+  section-titles-space-above: 0.35cm,
+  section-titles-space-below: 0.2cm,
   sections-allow-page-break: true,
-  sections-space-between-text-based-entries: 0.15cm,
-  sections-space-between-regular-entries: 0.32cm,
+  sections-space-between-text-based-entries: 0.12cm,
+  sections-space-between-regular-entries: 0.26cm,
   entries-date-and-location-width: 4.15cm,
   entries-side-space: 0cm,
   entries-space-between-columns: 0.1cm,
@@ -88,7 +88,7 @@
 
 = Elhanan Buchsbaum
 
-  #headline([Software & Data Systems · Technical Project Delivery · AI-Assisted Development])
+  #headline([Software & Data Systems · Technical Project Delivery · AI & Automation])
 
 #connections(
   [Bonn, Germany],
@@ -103,13 +103,13 @@
 
 == Summary
 
-Computational scientist (PhD) who builds software and hardware systems end to end — defining requirements and acceptance criteria up front, implementing and validating the solution, then documenting and training others to run it independently. Nine years in Python and Rust across data pipelines, HPC infrastructure, computer vision, and AI-assisted development (Claude Code, MCP-based tool integrations). Modernised legacy tooling that was then adopted team-wide. Two first-author Current Biology papers. Native English speaker; German B1–B2.
+Computational scientist (PhD) who builds software and hardware systems end to end — defining requirements and acceptance criteria up front, implementing and validating the solution, then documenting and training non-technical users to run it independently. Nine years building research software in Python, with Rust for real-time components, across data pipelines, HPC infrastructure, computer vision and applied AI. Native English speaker; German B1–B2.
 
 == Experience
 
 #regular-entry(
   [
-    #strong[Doctoral Researcher], MPI for Neurobiology of Behavior (caesar) \/ University of Bonn -- Bonn, Germany
+    #strong[Doctoral Researcher — Research Software & Systems Engineering], MPI for Neurobiology of Behavior \/ University of Bonn -- Bonn, Germany
 
   ],
   [
@@ -117,22 +117,22 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
   ],
   main-column-second-row: [
-    - Designed and built a closed-loop measurement platform for freely flying Drosophila end to end; defined datasets, test setups, and acceptance criteria up front, then implemented multi-camera imaging, real-time 3D tracking, optogenetic control, and microcontroller triggering at 10 ms closed-loop latency.
+    - Designed and built a real-time distributed measurement system end to end — defined datasets, test setups and acceptance criteria, then implemented multi-camera acquisition, real-time 3D tracking and hardware triggering at 10 ms closed-loop latency (applied to freely flying insects).
 
-    - Evaluated Python against the platform's timing requirements, found it insufficient, and rewrote the acquisition\/triggering layer in Rust; validated the multi-camera 3D calibration stack quantitatively.
+    - Ran the technology evaluation for the timing-critical layer: benchmarked the Python implementation against the latency requirements, found it insufficient, and rewrote acquisition and triggering in Rust; kept Python for surrounding tooling and analysis.
 
-    - Built reproducible Python pipelines processing hundreds of recordings in HDF5\/Parquet, run in parallel locally and as Slurm batch jobs; open-sourced the platform as OptoFly (github.com\/mpinb\/optofly, GPL-3.0).
+    - Built reproducible data pipelines processing hundreds of recordings in HDF5\/Parquet, run in parallel locally and as Slurm batch jobs on HPC; open-sourced the system as OptoFly (github.com\/mpinb\/optofly, GPL-3.0).
 
-    - Documented the system and shipped self-service tools so lab members without programming backgrounds could run analyses independently; trained and supported them; supervised one MSc student.
+    - Owned the full lifecycle — requirements, build, validation, documentation, handover and support — as the interface between non-technical users and the implementation; trained colleagues to run it unsupervised; supervised one MSc student.
 
-    - #strong[Result:] first-author paper in Current Biology (2025) on a descending neuron driving visually evoked flight saccades.
+    - #strong[Result:] first-author paper in Current Biology (2025); the system remains in daily use as one of the lab's standard tools.
 
   ],
 )
 
 #regular-entry(
   [
-    #strong[MSc Researcher], Technion – Israel Institute of Technology, Faculty of Medicine -- Haifa, Israel
+    #strong[MSc Researcher — Scientific Software & Data Analysis], Technion – Israel Institute of Technology -- Haifa, Israel
 
   ],
   [
@@ -140,20 +140,20 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
   ],
   main-column-second-row: [
-    - Built MATLAB signal-processing pipelines for in vivo electrophysiology and statistics; modernised the lab's legacy analysis codebase and trained incoming researchers — adopted lab-wide. Also taught Python\/ML fundamentals to non-programmer medical students (TA). Co-first-author paper in Current Biology (2021) on head-direction coding in the avian hippocampal formation.
+    - Built MATLAB signal-processing and statistics pipelines for large datasets; modernised and documented the lab's legacy analysis codebase, which was then adopted lab-wide, and trained incoming researchers on it. Also taught Python, statistics and ML to non-programmer medical students (teaching assistant). Co-first-author paper in Current Biology (2021).
 
   ],
 )
 
 == Skills
 
-#strong[AI & automation:] Claude Code, MCP-based tool\/skill integration, agentic coding harnesses (opencode, pi), OpenAI-compatible APIs, OpenRouter
+#strong[AI & automation:] Claude Code, MCP-based tool\/skill integration, agentic coding harnesses (opencode, pi), OpenAI-compatible APIs, OpenRouter; computer-vision models for automating manual processes
 
 #strong[Software, data & infrastructure:] Python (primary), Rust, MATLAB, R, Bash, SQL, Git\/GitHub, NumPy\/pandas\/scikit-learn, HDF5\/Parquet, Linux, Docker, HPC (Slurm)
 
 #strong[Computer vision & hardware:] OpenCV, FFmpeg, camera calibration, object detection (YOLO), closed-loop real-time instrumentation
 
-#strong[Working methods:] Translating requirements into acceptance criteria; iterative, incrementally validated development; technical documentation for non-technical audiences; training and onboarding; MS Office (Word, PowerPoint)
+#strong[Working methods & tools:] Requirements analysis and acceptance criteria; full software lifecycle from build to handover and support; iterative, incrementally validated development; structured written analyses and recommendations; Microsoft 365
 
 #strong[Languages:] English (native), Hebrew (native), German (B1–B2, actively studying)
 
@@ -161,7 +161,7 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
 #education-entry(
   [
-    #strong[University of Bonn \/ MPI for Neurobiology of Behavior (caesar)], PhD in Neuroscience (magna cum laude) -- Bonn, Germany
+    #strong[University of Bonn \/ MPI for Neurobiology of Behavior], PhD in Neuroscience — computational (magna cum laude) -- Bonn, Germany
 
   ],
   [

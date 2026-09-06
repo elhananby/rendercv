@@ -55,6 +55,15 @@ cv:
             documented the lab's legacy analysis codebase, which was then adopted lab-wide, and trained
             incoming researchers on it. Also taught Python, statistics and ML to non-programmer medical
             students (teaching assistant). Co-first-author paper in Current Biology (2021)."
+    selected_projects:
+      - name: Automated visual inspection pipeline — MPI for Neurobiology of Behavior
+        start_date: 2025
+        end_date: 2026
+        location: Bonn, Germany
+        highlights:
+          - Built imaging hardware and an OpenCV/FFmpeg + YOLO pipeline to replace a manual visual scoring
+            process; hardware, acquisition and detection ran end to end within a three-month contract,
+            classification validated at notebook stage.
     skills:
       - label: AI & automation
         details: Claude Code, MCP-based tool/skill integration, agentic coding harnesses (opencode, pi),
@@ -93,19 +102,19 @@ cv:
 design:
   theme: engineeringresumes
   page:
-    top_margin: 0.4in
-    bottom_margin: 0.4in
-    left_margin: 0.5in
-    right_margin: 0.5in
+    top_margin: 0.35in
+    bottom_margin: 0.35in
+    left_margin: 0.45in
+    right_margin: 0.45in
   header:
     connections:
       phone_number_format: international
   section_titles:
-    space_above: 0.35cm
-    space_below: 0.2cm
+    space_above: 0.22cm
+    space_below: 0.15cm
   sections:
-    space_between_regular_entries: 0.26cm
-    space_between_text_based_entries: 0.12cm
+    space_between_regular_entries: 0.18cm
+    space_between_text_based_entries: 0.08cm
 locale:
   language: english
 settings:
