@@ -12,8 +12,8 @@
   page-size: "us-letter",
   page-top-margin: 0.35in,
   page-bottom-margin: 0.35in,
-  page-left-margin: 0.5in,
-  page-right-margin: 0.5in,
+  page-left-margin: 0.6in,
+  page-right-margin: 0.6in,
   page-show-footer: false,
   page-show-top-note: true,
   colors-body: rgb(0, 0, 0),
@@ -24,7 +24,7 @@
   colors-links: rgb(0, 79, 144),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
-  typography-line-spacing: 0.5em,
+  typography-line-spacing: 0.6em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
   typography-font-family-body: "Raleway",
@@ -32,8 +32,8 @@
   typography-font-family-headline: "Raleway",
   typography-font-family-connections: "Raleway",
   typography-font-family-section-titles: "Raleway",
-  typography-font-size-body: 9.5pt,
-  typography-font-size-name: 20pt,
+  typography-font-size-body: 10pt,
+  typography-font-size-name: 22pt,
   typography-font-size-headline: 10pt,
   typography-font-size-connections: 10pt,
   typography-font-size-section-titles: 1.4em,
@@ -49,9 +49,9 @@
   links-show-external-link-icon: false,
   header-alignment: left,
   header-photo-width: 3.5cm,
-  header-space-below-name: 0.3cm,
-  header-space-below-headline: 0.3cm,
-  header-space-below-connections: 0.3cm,
+  header-space-below-name: 0.35cm,
+  header-space-below-headline: 0.35cm,
+  header-space-below-connections: 0.35cm,
   header-connections-hyperlink: true,
   header-connections-show-icons: true,
   header-connections-display-urls-instead-of-usernames: false,
@@ -59,11 +59,11 @@
   header-connections-space-between-connections: 0.5cm,
   section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
-  section-titles-space-above: 0.2cm,
-  section-titles-space-below: 0.12cm,
+  section-titles-space-above: 0.3cm,
+  section-titles-space-below: 0.18cm,
   sections-allow-page-break: true,
-  sections-space-between-text-based-entries: 0.1cm,
-  sections-space-between-regular-entries: 0.2cm,
+  sections-space-between-text-based-entries: 0.3em,
+  sections-space-between-regular-entries: 0.8em,
   entries-date-and-location-width: 4.15cm,
   entries-side-space: 0.2cm,
   entries-space-between-columns: 0.1cm,
@@ -75,8 +75,8 @@
   entries-highlights-bullet:  "•" ,
   entries-highlights-nested-bullet:  "•" ,
   entries-highlights-space-left: 0cm,
-  entries-highlights-space-above: 0.05cm,
-  entries-highlights-space-between-items: 0.05cm,
+  entries-highlights-space-above: 0.12cm,
+  entries-highlights-space-between-items: 0.12cm,
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
@@ -109,21 +109,6 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
 #regular-entry(
   [
-    #strong[Postdoctoral Researcher], Max Planck Institute for Neurobiology of Behavior (caesar) -- Bonn, Germany
-
-  ],
-  [
-    Jan 2025 – Jan 2026
-
-  ],
-  main-column-second-row: [
-    - Built imaging hardware (camera acquisition, lighting control, custom mechanical mount) and a Python\/OpenCV\/FFmpeg pipeline with a YOLO model to automate live\/dead nematode scoring, replacing slow manual assessment — prototyped end to end within a short three-month contract; the classification model reached notebook-stage validation.
-
-  ],
-)
-
-#regular-entry(
-  [
     #strong[Doctoral Researcher], MPI for Neurobiology of Behavior (caesar) \/ University of Bonn -- Bonn, Germany
 
   ],
@@ -134,9 +119,9 @@ Computational scientist (PhD) who builds software and hardware systems end to en
   main-column-second-row: [
     - Designed and built a closed-loop measurement platform for freely flying Drosophila end to end; defined datasets, test setups, and acceptance criteria up front, then implemented multi-camera imaging, real-time 3D tracking, optogenetic control, and microcontroller triggering at 10 ms closed-loop latency.
 
-    - Evaluated Python against the platform's timing requirements, found it insufficient, and rewrote the acquisition\/triggering layer in Rust; validated the multi-camera 3D calibration stack quantitatively (0.5 px reprojection error, 6 cameras at 100 fps).
+    - Evaluated Python against the platform's timing requirements, found it insufficient, and rewrote the acquisition\/triggering layer in Rust; validated the multi-camera 3D calibration stack quantitatively.
 
-    - Built reproducible Python pipelines processing hundreds of recordings (\~10 GB each) in HDF5\/Parquet, run in parallel locally and as Slurm batch jobs; open-sourced the platform as OptoFly (github.com\/mpinb\/optofly, GPL-3.0, 485 commits, live docs site).
+    - Built reproducible Python pipelines processing hundreds of recordings in HDF5\/Parquet, run in parallel locally and as Slurm batch jobs; open-sourced the platform as OptoFly (github.com\/mpinb\/optofly, GPL-3.0).
 
     - Documented the system and shipped self-service tools so lab members without programming backgrounds could run analyses independently; trained and supported them; supervised one MSc student.
 
@@ -155,9 +140,7 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
   ],
   main-column-second-row: [
-    - Built MATLAB signal-processing pipelines for in vivo electrophysiology and statistics over large multi-dimensional datasets (\~2,100 sorted units, 23 animals); modernised the lab's legacy analysis codebase, documented procedures, and trained incoming researchers — adopted lab-wide.
-
-    - Co-first-author paper in Current Biology (2021) on head-direction coding in the avian hippocampal formation. Also taught Python, statistics, and ML fundamentals to medical students with no programming background (TA, Machine Learning in Medical Sciences).
+    - Built MATLAB signal-processing pipelines for in vivo electrophysiology and statistics; modernised the lab's legacy analysis codebase and trained incoming researchers — adopted lab-wide. Also taught Python\/ML fundamentals to non-programmer medical students (TA). Co-first-author paper in Current Biology (2021) on head-direction coding in the avian hippocampal formation.
 
   ],
 )
@@ -168,13 +151,11 @@ Computational scientist (PhD) who builds software and hardware systems end to en
 
 #strong[Software, data & infrastructure:] Python (primary), Rust, MATLAB, R, Bash, SQL, Git\/GitHub, NumPy\/pandas\/scikit-learn, HDF5\/Parquet, Linux, Docker, HPC (Slurm)
 
-#strong[Computer vision & hardware:] OpenCV, FFmpeg, camera calibration, object detection (YOLO), markerless pose tracking (DeepLabCut, SLEAP), closed-loop real-time instrumentation
+#strong[Computer vision & hardware:] OpenCV, FFmpeg, camera calibration, object detection (YOLO), closed-loop real-time instrumentation
 
-#strong[Working methods:] Translating requirements into acceptance criteria; iterative, incrementally validated development; technical documentation for non-technical audiences; training and onboarding
+#strong[Working methods:] Translating requirements into acceptance criteria; iterative, incrementally validated development; technical documentation for non-technical audiences; training and onboarding; MS Office (Word, PowerPoint)
 
 #strong[Languages:] English (native), Hebrew (native), German (B1–B2, actively studying)
-
-#strong[Productivity tools:] Microsoft Office (Word, PowerPoint)
 
 == Education
 
