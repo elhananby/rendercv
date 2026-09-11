@@ -1,0 +1,238 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Elhanan Buchsbaum
+  headline: Quantitative Imaging · Image Analysis & Computer Vision · Research Instrumentation
+  location: Bonn, Germany
+  email: ebuchsbaum@protonmail.com
+  phone: "+49 151 4626 9424"
+  social_networks:
+    - network: GitHub
+      username: elhananby
+    - network: ORCID
+      username: 0000-0003-3698-6345
+    - network: LinkedIn
+      username: elhanan-buchsbaum-2461a7429
+  custom_connections:
+    - fontawesome_icon: globe
+      placeholder: German / EU citizen
+      url:
+  sections:
+    Research Profile:
+      - Experimental scientist (PhD) who builds imaging systems end to end — hardware and acquisition
+        through to the analysis pipelines that turn images into numbers. Most recently built an automated
+        imaging setup and an OpenCV/FFmpeg pipeline with a YOLO detection model to replace manual live/dead
+        scoring of nematodes on 6 cm plates. Earlier, designed and quantitatively validated a six-camera 3D
+        measurement platform (0.5 px reprojection error) with a real-time acquisition layer in Rust, and
+        reproducible analysis pipelines over hundreds of multi-gigabyte recordings on HPC. Comfortable at
+        the bench as well as at the keyboard — immunohistochemistry, fluorescence microscopy and Fiji
+        quantification, plus earlier genome-wide methylation analysis in R/Bioconductor. Two first-author
+        Current Biology papers.
+    experience:
+      - company: Max Planck Institute for Neurobiology of Behavior (caesar)
+        position: Postdoctoral Researcher
+        start_date: 2025
+        end_date: 2026
+        location: Bonn, Germany
+        highlights:
+          - Built an automated imaging setup for live/dead scoring of nematodes (Lightfoot lab) — camera
+            acquisition, lighting control and a custom mechanical mount — to replace slow manual assessment
+            of 6 cm plates.
+          - Wrote the acquisition and analysis software — live and offline capture scripts, an
+            OpenCV/FFmpeg processing pipeline, blob extraction, and a YOLO detection and classification
+            model on 5064 × 5064 images. Hardware, acquisition and detection ran end to end within a
+            three-month contract; the classification model reached notebook-stage validation.
+          - Extended the free-flight imaging platform (Schnell lab) for a forthcoming publication — added
+            optogenetic silencing, improved high-speed acquisition throughput, characterised additional
+            genotypes.
+      - company: MPI for Neurobiology of Behavior (caesar) / University of Bonn
+        position: Doctoral Researcher
+        start_date: 2019
+        end_date: 2025
+        location: Bonn, Germany
+        highlights:
+          - Designed and built a closed-loop measurement platform end to end — multi-camera high-speed
+            imaging, real-time 3D tracking at 100 Hz, optogenetic light control, visual displays and
+            microcontroller triggering, synchronised at 10 ms closed-loop latency.
+          - Built and validated the multi-camera 3D measurement stack — intrinsic and extrinsic calibration
+            across six cameras at 100 fps, triangulation, and calibration validated quantitatively at 0.5 px
+            reprojection error against a defined accuracy target.
+          - Wrote the timing-critical acquisition and triggering layer in Rust after a Python implementation
+            could not meet latency requirements; Python for all surrounding tooling and analysis.
+          - Developed reproducible Python pipelines processing hundreds of recordings of ~10 GB each in
+            HDF5/Parquet, parallelised locally and run as Slurm batch jobs.
+          - Applied markerless pose estimation (DeepLabCut, SLEAP) to high-speed, high-resolution video,
+            then segmented and classified trajectories using clustering and mixture models.
+          - Verified GAL4 driver-line expression and confirmed the identity of individual neurons by
+            immunohistochemistry on dissected brains — primary/secondary and nanobody-based antibody
+            staining, fluorescence microscopy, and quantification in ImageJ/Fiji across several hundred
+            animals.
+          - Documented the rig and shipped self-service analysis tools so lab members without programming
+            backgrounds could run standardised experiments and analyses unsupervised; trained and supported
+            them, and supervised one MSc student.
+          - "**Result:** first-author paper in Current Biology (2025) identifying a descending neuron that
+            drives visually evoked flight saccades. The platform remains in daily use as one of the group's
+            standard experimental tools."
+      - company: caesar
+        position: Research Rotations
+        start_date: 2018
+        end_date: 2019
+        location: Bonn, Germany
+        highlights:
+          - Two-photon calcium imaging in behaving Drosophila (Seelig lab); analysis of two- and
+            three-photon imaging data in rodents (Kerr lab).
+      - company: Technion – Israel Institute of Technology, Faculty of Medicine
+        position: MSc Researcher
+        start_date: 2016
+        end_date: 2018
+        location: Haifa, Israel
+        highlights:
+          - Built MATLAB signal-processing and analysis pipelines for in vivo tetrode electrophysiology —
+            spike sorting, single-unit and spatial-tuning analysis, and statistics over large
+            multi-dimensional time-series (~2,100 sorted units across 23 animals).
+          - Modernised and extended the lab's legacy analysis codebase, documented the procedures and
+            trained incoming researchers; the tooling was adopted lab-wide.
+          - Performed the experimental work hands-on — microsurgery, tetrode and microdrive construction,
+            stereotactic implantation — adapting recording hardware designed for rodents to an avian
+            species. Co-first-author paper in Current Biology (2021).
+      - company: University of Haifa
+        position: Research Assistant — Bioinformatics and Behavioural Neuroscience
+        start_date: 2014
+        end_date: 2016
+        location: Haifa, Israel
+        highlights:
+          - Genome-wide differential methylation analysis in R/Bioconductor — FDR-corrected workflows to
+            identify differentially methylated regions and candidate genes, pathway enrichment (Ingenuity
+            Pathway Analysis) and qPCR validation. Wet-lab molecular work — DNA/RNA extraction, qPCR, cell
+            culture, gene-expression analysis.
+          - Histological characterisation of a rat model of PTSD (Richter-Levin lab) — cryosectioning,
+            immunohistochemical staining, microscopy and manual quantification of labelled cells.
+            Co-authored paper in Molecular and Cellular Neuroscience (2021).
+    Selected Projects:
+      - name: "[OptoFly](https://github.com/mpinb/optofly) — closed-loop tracking and optogenetic
+          stimulation platform"
+        start_date: 2020
+        end_date: 2026
+        location: public, GPL-3.0
+        highlights:
+          - Integrates multi-camera 3D tracking with triggered recording, optogenetic stimulation, dynamic
+            autofocus and configurable visual stimuli; Rust acquisition layer with Python bindings. 485
+            commits, documented via a live docs site.
+    Technical Skills:
+      - label: Imaging & microscopy
+        details: High-resolution plate and live imaging, multi-camera acquisition, intrinsic/extrinsic
+          camera calibration and validation, machine-vision cameras (Basler/Pylon), lens selection,
+          LED/IR illumination, two-photon calcium imaging, fluorescence microscopy, ImageJ/Fiji
+      - label: Image analysis & ML
+        details: OpenCV, scikit-image, FFmpeg, object detection (YOLO), markerless pose tracking
+          (DeepLabCut, SLEAP), scikit-learn, clustering and mixture models, statistical modelling
+      - label: Programming
+        details: Python (primary), Rust (real-time acquisition), MATLAB, R, Bash, Arduino/C, Git/GitHub
+      - label: Data & infrastructure
+        details: HDF5, Parquet, Linux, Docker, HPC (Slurm), reproducible parallel/batch pipelines,
+          large-scale image and video datasets
+      - label: Instrumentation
+        details: Closed-loop real-time control, hardware triggering and synchronisation, microcontrollers,
+          custom rig design, experimental design with defined acceptance criteria
+      - label: Wet lab & molecular
+        details: Immunohistochemistry (primary/secondary and nanobody staining), cryosectioning,
+          microsurgery, DNA/RNA extraction, qPCR, cell culture, R/Bioconductor differential methylation
+          and pathway enrichment
+      - label: AI-assisted development
+        details: LLM-assisted development (Claude Code), MCP-based tool integration, agentic coding
+          harnesses, OpenAI-compatible APIs
+    education:
+      - institution: University of Bonn / MPI for Neurobiology of Behavior (caesar)
+        area: Neuroscience
+        degree: PhD
+        start_date: 2019
+        end_date: 2025
+        location: Bonn, Germany
+        highlights:
+          - magna cum laude. IMPRS for Brain and Behavior.
+          - "Thesis: *Neural Control of Flight Maneuvers in Freely Flying Drosophila melanogaster*
+            (advisor: Dr. Bettina Schnell)."
+      - institution: Technion – Israel Institute of Technology
+        area: Neuroscience
+        degree: MSc
+        start_date: 2016
+        end_date: 2018
+        location: Haifa, Israel
+        highlights:
+          - summa cum laude.
+          - "Thesis: *Space Coding in the Japanese Quail Hippocampal Formation* (advisor: Prof. Yoram
+            Gutfreund)."
+      - institution: University of Haifa
+        area: Biology and Psychology
+        degree: BSc
+        start_date: 2013
+        end_date: 2016
+        location: Haifa, Israel
+        highlights:
+          - "Bioinformatics research focus. Thesis: *Epigenetic Modulation of Autism Occurrence in 15q11.2
+            Deletion Carriers* (advisor: Prof. Gil Atzmon)."
+    publications:
+      - title: Activity of a descending neuron associated with visually elicited flight saccades in
+          Drosophila
+        authors:
+          - "**Elhanan Buchsbaum**"
+          - Bettina Schnell
+        journal: Current Biology 35(3), 665–671
+        doi: 10.1016/j.cub.2024.12.001
+        date: 2025
+      - title: Directional tuning in the hippocampal formation of birds
+        authors:
+          - "**Elhanan Ben-Yishay**"
+          - K. Krivoruchko
+          - S. Ron
+          - N. Ulanovsky
+          - D. Derdikman
+          - Y. Gutfreund
+        summary: Co-first author (with K. Krivoruchko).
+        journal: Current Biology 31(12), 2592–2602
+        doi: 10.1016/j.cub.2021.04.029
+        date: 2021
+      - title: Behavioral profiling reveals an enhancement of dentate gyrus paired pulse inhibition in a
+          rat model of PTSD
+        authors:
+          - A. Albrecht
+          - "**Elhanan Ben-Yishay**"
+          - G. Richter-Levin
+        summary: Work published before 2022 appears under the former surname Ben-Yishay.
+        journal: Molecular and Cellular Neuroscience 111, 103601
+        doi: 10.1016/j.mcn.2021.103601
+        date: 2021
+    Fellowships & Training:
+      - bullet: Max Planck Minerva Fellowship (2021); IMPRS Fellowship, doctoral selection (2019).
+      - bullet: Janelia Mechanistic Cognition Junior Scientist Workshop (2025); FENS-Hertie Winter School,
+          Neural Control of Behavior (2017).
+    referees:
+      - bullet: "Dr. Bettina Schnell — Max Planck Institute for Neurobiology of Behavior (caesar), Bonn.
+          Doctoral advisor. [add email]"
+      - bullet: "Dr. James Lightfoot — Max Planck Institute for Neurobiology of Behavior (caesar), Bonn.
+          Host for the nematode imaging project. [add email]"
+      - bullet: "Prof. Yoram Gutfreund — Technion – Israel Institute of Technology, Haifa. MSc advisor.
+          [add email]"
+design:
+  theme: engineeringresumes
+  page:
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.55in
+    right_margin: 0.55in
+  header:
+    connections:
+      phone_number_format: international
+  section_titles:
+    space_above: 0.35cm
+    space_below: 0.2cm
+  sections:
+    space_between_regular_entries: 0.28cm
+    space_between_text_based_entries: 0.12cm
+locale:
+  language: english
+settings:
+  current_date: today
+  render_command:
+    output_folder: output
+  bold_keywords: []
+  pdf_title: Elhanan Buchsbaum - CV
